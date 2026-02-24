@@ -43,9 +43,31 @@ Before you do anything else, press the “show options” button. This will expa
 
 You now need to enter the name of the PC you wish to connect to – for you this will be “STU-6DIGITSTUDENTNUMBER-VM1" (You must replace 6DIGITSTUDENTNUMBER with your own 6-digit student number). 
 
-You should then enter your 6-digit student number into the Username field and then press connect.  
+You should then enter your 6-digit student number into the Username field and then press connect.
 
-TIP! If your username doesn’t work, you may need to add ADIR\ before it, to prompt the active directory service – so this would look like: ADIR\YOUR6DIGITNUMBERHERE. 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="alert alert-primary" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+</svg> <strong>TIP!</strong>
+If your username doesn’t work, you may need to add ADIR\ before it, to prompt the active directory service – so this would look like: ADIR\YOUR6DIGITNUMBERHERE.      
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
 When you have done this, you should be prompted with a window that asks you to enter your password. This is the same Password that you use to log on to any University Machine. 
  
@@ -55,14 +77,15 @@ When you accept the notification, you should be sent to a Windows Desktop lookin
 
 ![Image](Pictures/004.png) 
 
-Checking for (and completing a) GIT Installation. 
+## Checking for (and completing a) GIT Installation. 
 
 Before you can get your Portfolio on to your Windows Server, you first need to install GIT. 
 
-To check if you already have Git installed, in PowerShell write the command: 
+To check if you already have Git installed, in PowerShell write the command:
 
+```text
 git version 
-
+```
 If The Terminal returns information about your Git install, then you currently have access to use Git on your PC. If it returns the following error: 
 
 ![Image](Pictures/005.jpg)
@@ -179,8 +202,9 @@ There are a few different ways we can do this, but the best way with our current
 
 Open a terminal and enter the following command: 
 
+```text
 Get-Service w3svc 
-
+```
 If everything it working correctly you should get this response back from the terminal: 
  
 ![Image](Pictures/018.png)
